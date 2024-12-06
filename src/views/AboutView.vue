@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <HeroSection><div>qwe</div></HeroSection>
   </div>
 </template>
+<script>
+import HeroSection from "@/components/HeroSection.vue";
+
+export default {
+  name: "HomeView",
+  components: {
+    HeroSection,
+  },
+};
+</script>

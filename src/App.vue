@@ -1,30 +1,66 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <header>
+    <router-link to="/"
+      ><div class="logo"><h2>Round table</h2></div></router-link
+    >
+    <nav>
+      <ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/shop">Shop Now</router-link></li>
+        <li><router-link to="/about">Contact Us</router-link></li>
+      </ul>
+    </nav>
+
+    <button>Join</button>
+  </header>
+  <router-view />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+* {
+  font-family: "Roboto", sans-serif;
 }
-
+header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 25px 5%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
 nav {
-  padding: 30px;
+  width: 25%;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+nav li {
+  margin: 0 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  background-color: black;
+  padding: 5px 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+button:hover {
+  outline: 1px solid black;
+  background-color: white;
+  color: black;
 }
 </style>
