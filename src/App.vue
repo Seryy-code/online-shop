@@ -14,6 +14,7 @@
     <button>Join</button>
   </header>
   <router-view />
+  <FooterComponent />
 </template>
 
 <style scoped>
@@ -52,7 +53,7 @@ button {
   cursor: pointer;
   transition: 0.1s ease-in-out;
   background-color: black;
-  padding: 5px 22px;
+  padding: 10px 22px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -64,3 +65,12 @@ button:hover {
   color: black;
 }
 </style>
+<script>
+import FooterComponent from "@/components/FooterComponent/FooterComponent.vue";
+
+export default {
+  components: {
+    FooterComponent,
+  },
+};
+</script>
