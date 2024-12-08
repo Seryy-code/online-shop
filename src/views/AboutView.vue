@@ -72,6 +72,18 @@
         </div>
       </div>
     </HeroSection>
+    <HeroSection>
+      <div class="primary">
+        <h1>Shop the Best Deals Today</h1>
+        <p>Discover a world of quality products at great prices.</p>
+      </div>
+      <div class="secondary">
+        <div class="cont_buttons">
+          <button class="v1">Shop</button>
+          <button class="v2">Browse</button>
+        </div>
+      </div>
+    </HeroSection>
   </div>
 </template>
 <script>

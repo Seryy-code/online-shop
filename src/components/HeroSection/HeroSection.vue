@@ -15,6 +15,8 @@
   width: 45%;
 }
 ::v-deep(.secondary) {
+  display: flex;
+  justify-content: flex-end;
   width: 45%;
 }
 ::v-deep(.cont_text) {
@@ -36,10 +38,15 @@
   line-height: 150%;
   background: none;
 }
+::v-deep(.secondary .cont_buttons) {
+  justify-content: flex-end;
+}
 ::v-deep(.cont_buttons) {
-  width: 260px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+}
+::v-deep(.cont_buttons > *) {
+  margin-right: 15px;
 }
 ::v-deep(button.v1) {
   background-color: black;
